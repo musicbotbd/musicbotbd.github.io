@@ -3,13 +3,79 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Music Bot – free Discord music bot</title>
-<meta name="description" content="A free Discord music bot. Play songs and playlists from YouTube, Spotify, Apple Music and SoundCloud. Autoplay, loop, shuffle, request channel. No premium, no paywall.">
-<meta property="og:title" content="Music Bot – free Discord music bot">
-<meta property="og:description" content="Songs and playlists from YouTube, Spotify, Apple Music and SoundCloud. Every feature free.">
-<meta property="og:image" content="https://musicbotbd.github.io/avatar.png">
+<title>Music Bot – Free Discord Music Bot for YouTube, Spotify &amp; Apple Music</title>
+<meta name="description" content="Music Bot is a free Discord music bot with no premium. Play songs and playlists from YouTube, Spotify, Apple Music and SoundCloud, with autoplay, loop, shuffle and a request channel.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://musicbotbd.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Music Bot">
+<meta property="og:title" content="Music Bot – Free Discord Music Bot, no premium">
+<meta property="og:description" content="Songs and playlists from YouTube, Spotify, Apple Music and SoundCloud in your Discord voice channel. Every feature free.">
+<meta property="og:image" content="https://musicbotbd.github.io/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Music Bot, a free Discord music bot">
 <meta property="og:url" content="https://musicbotbd.github.io/">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Music Bot – Free Discord Music Bot, no premium">
+<meta name="twitter:description" content="YouTube, Spotify, Apple Music and SoundCloud in your Discord voice channel. Every feature free.">
+<meta name="twitter:image" content="https://musicbotbd.github.io/og.png">
 <meta name="theme-color" content="#0d0c11">
+<link rel="apple-touch-icon" href="avatar.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://musicbotbd.github.io/#website",
+      "url": "https://musicbotbd.github.io/",
+      "name": "Music Bot",
+      "alternateName": ["musicbotbd", "Music Bot Discord"],
+      "inLanguage": "en"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://musicbotbd.github.io/#app",
+      "name": "Music Bot",
+      "alternateName": "Music Bot for Discord",
+      "url": "https://musicbotbd.github.io/",
+      "image": "https://musicbotbd.github.io/avatar.png",
+      "description": "A free Discord music bot that plays songs and playlists from YouTube, Spotify, Apple Music and SoundCloud, with autoplay, loop, shuffle, seek and a request channel. No premium tier.",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "Discord bot",
+      "operatingSystem": "Discord (Windows, macOS, Linux, Android, iOS, Web)",
+      "isAccessibleForFree": true,
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "featureList": [
+        "Play songs by name or link",
+        "YouTube, Spotify, Apple Music and SoundCloud playlists",
+        "Autoplay with similar songs",
+        "Loop, shuffle, seek and remove",
+        "Request channel",
+        "Slash commands"
+      ],
+      "installUrl": "https://discord.com/oauth2/authorize?client_id=1553084690335015023",
+      "author": { "@type": "Person", "name": "Md. Abdullah Al Shahebul Makam", "url": "https://github.com/Shahebul-Makam" },
+      "sameAs": ["https://github.com/musicbotbd"]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Is Music Bot really free?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. There is no premium version. Every command works for everyone." } },
+        { "@type": "Question", "name": "Can Music Bot play Spotify and Apple Music playlists?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Paste a Spotify or Apple Music song, album or playlist link into /play. The bot reads the song names and plays each song from YouTube." } },
+        { "@type": "Question", "name": "Why does a song take a few seconds to start?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Each song is loaded right before it plays, one at a time. That keeps the bot light so it can stay free and online." } },
+        { "@type": "Question", "name": "How do I add Music Bot to my Discord server?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Click Add to Discord on musicbotbd.github.io, pick your server, join a voice channel and type /play with a song name or link." } }
+      ]
+    }
+  ]
+}
+</script>
 <link rel="icon" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,8 +104,8 @@
       <div>
         <h1>Music for your Discord, <span>free for everyone</span></h1>
         <p class="lead">
-          <span data-name>Music Bot</span> plays songs and whole playlists from YouTube, Spotify, Apple Music and
-          SoundCloud in your voice channel. Every feature is free. No premium, no votes, no paywall.
+          <span data-name>Music Bot</span> is a free Discord music bot. It plays songs and whole playlists from YouTube,
+          Spotify, Apple Music and SoundCloud in your voice channel. Every feature is free. No premium, no votes, no paywall.
         </p>
         <div class="actions">
           <a class="btn" data-invite href="https://discord.com/oauth2/authorize?client_id=1553084690335015023">➕ Add to Discord</a>
@@ -147,10 +213,11 @@
   <section id="faq">
     <div class="wrap">
       <div class="section-head"><h2>Questions</h2></div>
-      <details><summary>Is it really free?</summary><p>Yes. There is no premium version. Every command works for everyone.</p></details>
+      <details><summary>Is Music Bot really free?</summary><p>Yes. There is no premium version. Every command works for everyone.</p></details>
+      <details><summary>How do I add Music Bot to my Discord server?</summary><p>Click <a data-invite href="https://discord.com/oauth2/authorize?client_id=1553084690335015023">Add to Discord</a>, pick your server, join a voice channel and type <code>/play</code> with a song name or link.</p></details>
       <details><summary>Why does a song take a few seconds to start?</summary><p>Each song is loaded right before it plays, one at a time. That keeps the bot light so it can stay free and online.</p></details>
       <details><summary>My YouTube Mix plays different songs than on YouTube. Why?</summary><p>YouTube makes every Mix personally for the person watching, and reshuffles it each time. The bot can't see your account, so it gets a general Mix. To play exactly the list you see, use the <a href="mix.html">Copy Mix button</a>.</p></details>
-      <details><summary>Spotify and Apple Music links: how do they work?</summary><p>The bot reads the song names from the link and plays each song from YouTube. Now and then it may pick a different version (live, cover).</p></details>
+      <details><summary>Can Music Bot play Spotify and Apple Music playlists?</summary><p>Yes. Paste a Spotify or Apple Music song, album or playlist link into <code>/play</code>. The bot reads the song names and plays each song from YouTube. Now and then it may pick a different version (live, cover).</p></details>
       <details><summary>The bot isn't responding. What can I do?</summary><p>Make sure you're in a voice channel and the bot can see and join it. If it still doesn't answer, wait a minute: it restarts itself after problems.</p></details>
     </div>
   </section>
