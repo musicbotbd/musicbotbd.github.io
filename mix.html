@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Copy Mix – Music Bot</title>
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="config.js" defer></script>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="avatar.png" alt=""><span data-name>Music Bot</span></a>
+    <a class="btn small" data-invite href="https://discord.com/oauth2/authorize?client_id=1553084690335015023" style="margin-left:auto">Add to Discord</a>
+  </div>
+</header>
+<main class="page">
+  <h1>Play your own YouTube Mix</h1>
+  <p>YouTube makes every Mix just for the person watching it, and shuffles it again every time it opens. So when you give the bot a Mix link, it gets a general Mix, not yours. This button copies the exact songs you see, in the same order.</p>
+  <p>Only the video ids are copied. Your YouTube login and cookies never leave your browser.</p>
+  <a class="btn bm-btn" href="javascript:%28%28%29%3D%3E%7Bconst%20it%3D%5B...document.querySelectorAll%28%27ytd-playlist-panel-video-renderer%27%29%5D%3Bif%28%21it.length%29%7Balert%28%27Open%20a%20YouTube%20Mix%20or%20playlist%20first%20%28the%20list%20on%20the%20right%20side%29.%27%29%3Breturn%7Dlet%20s%3Dit.findIndex%28e%3D%3Ee.hasAttribute%28%27selected%27%29%29%3Bif%28s%3C0%29s%3D0%3Bconst%20ids%3D%5B...new%20Set%28it.slice%28s%29.map%28e%3D%3E%7Bconst%20a%3De.querySelector%28%27a%23wc-endpoint%27%29%7C%7Ce.querySelector%28%27a%27%29%3Btry%7Breturn%20new%20URL%28a.href%2Clocation.href%29.searchParams.get%28%27v%27%29%7Dcatch%28x%29%7Breturn%20null%7D%7D%29.filter%28Boolean%29%29%5D.slice%280%2C50%29%3Bconst%20mix%3D%28new%20URL%28location.href%29.searchParams.get%28%27list%27%29%7C%7C%27%27%29.startsWith%28%27RD%27%29%3Bconst%20link%3D%27https%3A%2F%2Fwww.youtube.com%2Fwatch_videos%3Fvideo_ids%3D%27%2Bids.join%28%27%2C%27%29%2B%28mix%3F%27%26mix%3D1%27%3A%27%27%29%3Bwindow.__musicBotLink%3Dlink%3Bconst%20done%3D%28%29%3D%3Ealert%28%27Copied%20%27%2Bids.length%2B%27%20songs%20for%20Music%20Bot.%20In%20Discord%3A%20%2Fplay%20and%20paste.%27%29%3Bnavigator.clipboard.writeText%28link%29.then%28done%2C%28%29%3D%3Eprompt%28%27Copy%20this%20link%2C%20then%20%2Fplay%20it%20in%20Discord%3A%27%2Clink%29%29%7D%29%28%29">🎵 Copy Mix for <span data-name>Music Bot</span></a>
+  <p class="muted" style="font-size:14px">Don't click it here: drag it to your bookmarks bar.</p>
+
+  <h2>How to set it up (once)</h2>
+  <ol>
+    <li>Show your bookmarks bar. Chrome, Edge, Opera: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd>.</li>
+    <li>Drag the purple button above onto the bookmarks bar.</li>
+  </ol>
+
+  <h2>How to use it</h2>
+  <ol>
+    <li>On YouTube, open a Mix or a playlist. The song list shows on the right.</li>
+    <li>Click the bookmark. It copies a link (the list starts at the song playing now, up to 50 songs).</li>
+    <li>In Discord, type <code>/stop</code> if something is already playing.</li>
+    <li>Type <code>/play</code>, paste the link, and press Enter.</li>
+  </ol>
+  <p>The bot plays your list in order. If it was a Mix, it keeps going with similar songs after that.</p>
+  <p class="muted">Works in desktop browsers. Phones don't support bookmark buttons like this.</p>
+  <p><a href="index.html">← Back to the home page</a></p>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© <span data-year>2026</span> <span data-name>Music Bot</span></span>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+  </div>
+</footer>
+</body>
+</html>

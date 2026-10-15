@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Music Bot – free Discord music bot</title>
+<meta name="description" content="A free Discord music bot. Play songs and playlists from YouTube, Spotify, Apple Music and SoundCloud. Autoplay, loop, shuffle, request channel. No premium, no paywall.">
+<meta property="og:title" content="Music Bot – free Discord music bot">
+<meta property="og:description" content="Songs and playlists from YouTube, Spotify, Apple Music and SoundCloud. Every feature free.">
+<meta property="og:image" content="https://musicbotbd.github.io/avatar.png">
+<meta property="og:url" content="https://musicbotbd.github.io/">
+<meta name="theme-color" content="#0d0c11">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="config.js" defer></script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="avatar.png" alt=""><span data-name>Music Bot</span></a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#features">Features</a>
+      <a href="#commands">Commands</a>
+      <a href="#support">Support</a>
+    </nav>
+    <a class="btn small" data-invite href="https://discord.com/oauth2/authorize?client_id=1553084690335015023">Add to Discord</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Music for your Discord, <span>free for everyone</span></h1>
+        <p class="lead">
+          <span data-name>Music Bot</span> plays songs and whole playlists from YouTube, Spotify, Apple Music and
+          SoundCloud in your voice channel. Every feature is free. No premium, no votes, no paywall.
+        </p>
+        <div class="actions">
+          <a class="btn" data-invite href="https://discord.com/oauth2/authorize?client_id=1553084690335015023">➕ Add to Discord</a>
+          <a class="btn ghost" href="#commands">See commands</a>
+        </div>
+        <p class="free">Works in any server · Slash commands · Runs in the cloud</p>
+      </div>
+      <div class="hero-art">
+        <span class="note-float n1" aria-hidden="true">♪</span>
+        <img src="avatar.png" alt="Music Bot avatar: a cat with golden headphones on a vinyl record" width="320" height="320">
+        <span class="note-float n2" aria-hidden="true">♫</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Everything a music bot should do</h2>
+        <p>Built for small servers and friend groups, with the features big bots keep behind premium.</p>
+      </div>
+      <div class="grid">
+        <div class="card"><div class="ico">🎵</div><h3>Any song, any link</h3><p>Type a song name or paste a YouTube, Spotify, Apple Music or SoundCloud link.</p></div>
+        <div class="card"><div class="ico">📃</div><h3>Whole playlists</h3><p>Paste a playlist or album and every song plays one after another, up to 200 at a time.</p></div>
+        <div class="card"><div class="ico">📻</div><h3>Autoplay &amp; Mixes</h3><p>When the queue ends, the bot keeps going with similar songs, like YouTube autoplay.</p></div>
+        <div class="card"><div class="ico">🔁</div><h3>Loop, shuffle, seek</h3><p>Repeat a song or the whole queue, shuffle it, jump to any time, remove songs.</p></div>
+        <div class="card"><div class="ico">🎤</div><h3>Request channel</h3><p>Pick a channel where people just type a song name and it plays. No command needed.</p></div>
+        <div class="card"><div class="ico">🛟</div><h3>Doesn't give up</h3><p>Rejoins by itself if it drops, and carries on from the same spot after a restart.</p></div>
+        <div class="card"><div class="ico">🎧</div><h3>Clean audio</h3><p>Plays YouTube's own Opus audio without re-encoding, so the quality stays as it is.</p></div>
+        <div class="card"><div class="ico">💸</div><h3>Free, for real</h3><p>No premium tiers. If you like it you can chip in, but you never have to.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Start in a minute</h2>
+      </div>
+      <div class="steps">
+        <div class="card step"><h3>Add the bot</h3><p>Click <a data-invite href="https://discord.com/oauth2/authorize?client_id=1553084690335015023">Add to Discord</a> and pick your server.</p></div>
+        <div class="card step"><h3>Join a voice channel</h3><p>The bot comes to the channel you're in.</p></div>
+        <div class="card step"><h3>Play something</h3><p>Type <code>/play</code> and a song name or link. That's it.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="commands">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Commands</h2>
+        <p>All commands are slash commands. Type <code>/</code> in Discord to see them. <code>/help</code> shows this list in Discord.</p>
+      </div>
+      <div class="cmds">
+        <div class="cmd"><code>/play</code><span>Song name, or a YouTube / Spotify / Apple Music / SoundCloud song, album or playlist link</span></div>
+        <div class="cmd"><code>/skip</code><span>Skip to the next song</span></div>
+        <div class="cmd"><code>/pause</code><span>Pause the music</span></div>
+        <div class="cmd"><code>/resume</code><span>Continue after a pause</span></div>
+        <div class="cmd"><code>/seek 1:30</code><span>Jump to a time in the current song</span></div>
+        <div class="cmd"><code>/loop</code><span>Repeat the song, the whole queue, or turn it off</span></div>
+        <div class="cmd"><code>/queue</code><span>See what's playing and what's next</span></div>
+        <div class="cmd"><code>/shuffle</code><span>Mix up the order of the queue</span></div>
+        <div class="cmd"><code>/remove 3</code><span>Remove a song by its number in /queue</span></div>
+        <div class="cmd"><code>/volume 50</code><span>Set the volume from 0 to 100</span></div>
+        <div class="cmd"><code>/autoplay</code><span>Keep playing similar songs when the queue ends</span></div>
+        <div class="cmd"><code>/requestchannel</code><span>Admins: a channel where typing a song plays it</span></div>
+        <div class="cmd"><code>/stop</code><span>Stop, clear the queue and leave</span></div>
+        <div class="cmd"><code>/help</code><span>Show every command in Discord</span></div>
+      </div>
+      <p class="muted" style="text-align:center;margin-top:24px">
+        Want your own personal YouTube Mix in the exact order you see it? Use the <a href="mix.html">Copy Mix button</a>.
+      </p>
+    </div>
+  </section>
+
+  <section id="support" class="alt">
+    <div class="wrap donate-box">
+      <div class="section-head">
+        <h2>Support the bot ❤️</h2>
+        <p>
+          <span data-name>Music Bot</span> is free and will stay free. Running it 24/7 costs money, so if it makes your
+          server better and you want to help, any amount is welcome. Not donating is completely fine too:
+          you get every feature either way.
+        </p>
+      </div>
+      <div class="pay">
+        <div class="card" data-pay="bkash" style="--c: var(--bkash)">
+          <span class="tag">bKash</span>
+          <div class="num">01XXXXXXXXX</div>
+          <p class="how">Send Money to this personal number.</p>
+          <button class="btn small copy" type="button">Copy number</button>
+        </div>
+        <div class="card" data-pay="nagad" style="--c: var(--nagad)">
+          <span class="tag">Nagad</span>
+          <div class="num">01XXXXXXXXX</div>
+          <p class="how">Send Money to this personal number.</p>
+          <button class="btn small copy" type="button">Copy number</button>
+        </div>
+      </div>
+      <p data-pay-none class="pill-note" hidden>Donations open soon</p>
+      <p class="muted">Donations are a gift: they don't unlock anything and can't be refunded. Thank you! 🧡</p>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head"><h2>Questions</h2></div>
+      <details><summary>Is it really free?</summary><p>Yes. There is no premium version. Every command works for everyone.</p></details>
+      <details><summary>Why does a song take a few seconds to start?</summary><p>Each song is loaded right before it plays, one at a time. That keeps the bot light so it can stay free and online.</p></details>
+      <details><summary>My YouTube Mix plays different songs than on YouTube. Why?</summary><p>YouTube makes every Mix personally for the person watching, and reshuffles it each time. The bot can't see your account, so it gets a general Mix. To play exactly the list you see, use the <a href="mix.html">Copy Mix button</a>.</p></details>
+      <details><summary>Spotify and Apple Music links: how do they work?</summary><p>The bot reads the song names from the link and plays each song from YouTube. Now and then it may pick a different version (live, cover).</p></details>
+      <details><summary>The bot isn't responding. What can I do?</summary><p>Make sure you're in a voice channel and the bot can see and join it. If it still doesn't answer, wait a minute: it restarts itself after problems.</p></details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span data-year>2026</span> <span data-name>Music Bot</span></span>
+    <a href="mix.html">Copy Mix</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <span class="right">Made in Dhaka by <a data-github href="https://github.com/Shahebul-Makam">Shahebul Makam</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

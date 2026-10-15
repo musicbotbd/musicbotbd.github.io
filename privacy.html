@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – Music Bot</title>
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="config.js" defer></script>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="avatar.png" alt=""><span data-name>Music Bot</span></a>
+    <a class="btn small" data-invite href="https://discord.com/oauth2/authorize?client_id=1553084690335015023" style="margin-left:auto">Add to Discord</a>
+  </div>
+</header>
+<main class="page">
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: 15 October 2026</p>
+  <p>This page explains what <span data-name>Music Bot</span> ("the bot") keeps when you use it in Discord. The short version: it keeps only what it needs to play music, and it never sells or shares your data.</p>
+
+  <h2>What the bot stores</h2>
+  <ul>
+    <li>Server settings: your server's ID, whether autoplay is on, and the request channel, if an admin set one. Kept until you change them or remove the bot.</li>
+    <li>The current queue: song titles and links, which voice and text channel it is playing in, and recently played song IDs (so autoplay doesn't repeat songs). This lets the bot carry on after a restart. It is replaced as the queue changes and cleared by <code>/stop</code>.</li>
+    <li>Technical logs: errors and events such as which song failed to load. Logs are rotated and old ones are deleted automatically.</li>
+  </ul>
+
+  <h2>Messages</h2>
+  <p>The bot reads message text only in a request channel that a server admin turned on with <code>/requestchannel</code>, and only to find the song you typed. It does not store those messages. In every other channel it ignores messages.</p>
+
+  <h2>What the bot does not collect</h2>
+  <ul>
+    <li>No passwords, emails, phone numbers or payment details.</li>
+    <li>No voice: the bot joins voice channels deafened and never records anything.</li>
+    <li>No tracking or advertising.</li>
+  </ul>
+
+  <h2>Other services</h2>
+  <p>To find and play songs the bot contacts YouTube, and for Spotify, Apple Music or SoundCloud links it reads the public page of that link. Only the song name or link is sent, never information about you. The bot runs on a cloud server in Europe. Discord's own <a href="https://discord.com/privacy">Privacy Policy</a> covers everything Discord itself handles.</p>
+
+  <h2>Donations</h2>
+  <p>If you donate by bKash or Nagad, the payment happens inside those apps. The bot and this website never see your account details.</p>
+
+  <h2>Removing your data</h2>
+  <p>Use <code>/stop</code> to clear the queue, and turn settings off with <code>/autoplay off</code> or <code>/requestchannel off</code>. Removing the bot from your server stops all use of your server's data. To ask for anything else to be deleted, contact the developer through <a data-github href="https://github.com/Shahebul-Makam">GitHub</a>.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be posted on this page with a new date.</p>
+  <p><a href="index.html">← Back to the home page</a></p>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© <span data-year>2026</span> <span data-name>Music Bot</span></span>
+    <a href="mix.html">Copy Mix</a>
+    <a href="terms.html">Terms</a>
+  </div>
+</footer>
+</body>
+</html>
